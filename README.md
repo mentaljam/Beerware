@@ -11,3 +11,6 @@ The icon shape by [Morpog](https://github.com/Morpog/jolla-icon-shapes)
 
 ## ATTENTION
 This code could eat your cat, burn your house or some other catasthrophy. Use with care!
+
+## Localization
+You can help to localize this application to your language via [Transifex](https://www.transifex.com/mentaljam/harbour-beerware).
