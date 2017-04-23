@@ -47,7 +47,7 @@ Page {
         font.bold: true
         font.pixelSize: Theme.fontSizeLarge
         color: Theme.highlightColor
-        text: "Beerware 0.8.2"
+        text: "Beerware 0.9.0"
     }
 
     Text {
@@ -103,9 +103,9 @@ Page {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: copyright.bottom
         anchors.topMargin: Theme.paddingLarge * 2
-        text: qsTr("GitHub repo mirror")
+        text: qsTr("GitHub repo")
         onClicked: {
-            Qt.openUrlExternally("https://github.com/lechindianer/beerware")
+            Qt.openUrlExternally("https://github.com/mentaljam/Beerware")
         }
     }
 

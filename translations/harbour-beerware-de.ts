@@ -16,7 +16,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>GitHub repo mirror</source>
+        <source>GitHub repo</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

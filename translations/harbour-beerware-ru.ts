@@ -16,8 +16,8 @@
         <translation>&lt;b&gt;Лицензия&lt;/b&gt;:</translation>
     </message>
     <message>
-        <source>GitHub repo mirror</source>
-        <translation>GitHub</translation>
+        <source>GitHub repo</source>
+        <translation>Код на GitHub</translation>
     </message>
 </context>
 <context>

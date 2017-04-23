@@ -1,12 +1,12 @@
-# Rename this file as Beerware.changes to include changelog
-# entries in your RPM file.
-#
-# Add new changelog entries following the format below.
-# Add newest entries to the top of the list.
-# Separate entries from eachother with a blank line.
+* Sun Apr 23 2017 Petr Tsymbarovich <petr@tsymbarovich.ru> 0.9.0
+- New beers model in C++
+- Add sort, search and export functionality
+- Update beers, cover and about pages
+- Add settings page
+- Reduce application size by removing unused assets
+- Update icons
+- Add Russian translation
 
-# * date Author's Name <author's email> version-release
-# - Summary of changes
 
 * Fri Mar 11 2016 Pascal Schmid <psschmid@gmx.de> 0.8.2
 - Database model changed
