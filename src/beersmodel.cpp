@@ -15,7 +15,8 @@ BeersModel::BeersModel(QObject *parent) :
                                   QLatin1String("/../../beers.sqlite"));
     auto db = QSqlDatabase::addDatabase(QLatin1String("QSQLITE"));
     db.setDatabaseName(dbPath);
-    auto canOpen = QFileInfo(dbPath).exists();
+    QFileInfo dbFileInfo(dbPath);
+    auto canOpen = dbFileInfo.exists();
     // Open existing database
     if (canOpen)
     {
@@ -62,6 +63,7 @@ BeersModel::BeersModel(QObject *parent) :
     if (!canOpen)
     {
         qDebug() << "Creating new database";
+        dbFileInfo.absoluteDir().mkpath(QLatin1Literal("."));
         db.open();
         db.exec("CREATE TABLE IF NOT EXISTS beers ("
                 "uID INTEGER PRIMARY KEY,"

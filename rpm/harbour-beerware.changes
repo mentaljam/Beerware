@@ -1,3 +1,7 @@
+* Mon Apr 24 2017 Petr Tsymbarovich <petr@tsymbarovich.ru> 0.9.1
+- Fix DB path error for a fresh installation
+
+
 * Sun Apr 23 2017 Petr Tsymbarovich <petr@tsymbarovich.ru> 0.9.0
 - New beers model in C++
 - Add sort, search and export functionality
