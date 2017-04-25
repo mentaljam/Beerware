@@ -7,6 +7,9 @@ CONFIG += \
 
 QT += sql
 
+VERSION = $$system("echo $(awk -F ':' '/Version/ {print $2}' rpm/harbour-beerware.yaml)")
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
+
 SOURCES += \
     src/harbour-beerware.cpp \
     src/beersmodel.cpp \

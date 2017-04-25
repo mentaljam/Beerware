@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
     auto view = SailfishApp::createView();
     auto rootContext = view->rootContext();
 
+    app->setApplicationVersion(QLatin1String(APP_VERSION));
+
     auto settings = new Settings(app);
     rootContext->setContextProperty(QLatin1String("settings"), settings);
 
