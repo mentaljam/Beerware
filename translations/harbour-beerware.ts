@@ -19,6 +19,10 @@
         <source>GitHub repo</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BeerDelegate</name>

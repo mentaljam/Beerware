@@ -47,7 +47,7 @@ Page {
         font.bold: true
         font.pixelSize: Theme.fontSizeLarge
         color: Theme.highlightColor
-        text: "Beerware 0.9.1"
+        text: "Beerware %0".arg(Qt.application.version)
     }
 
     Text {
@@ -63,7 +63,7 @@ Page {
         readonly property real _labelWidth: Math.max(copyrightLabel.contentWidth,
                                                      licenseLabel.contentWidth)
 
-        id: copyright
+        id: copyrightGrid
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: desc.bottom
         anchors.topMargin: Theme.paddingLarge
@@ -73,7 +73,7 @@ Page {
 
         Label {
             id: copyrightLabel
-            width: copyright._labelWidth
+            width: copyrightGrid._labelWidth
             text: qsTr("<b>Copyright</b>:")
             horizontalAlignment: Text.AlignRight
             font.pixelSize: Theme.fontSizeSmall
@@ -86,7 +86,7 @@ Page {
 
         Label {
             id: licenseLabel
-            width: copyright._labelWidth
+            width: copyrightGrid._labelWidth
             text: qsTr("<b>License</b>:")
             horizontalAlignment: Text.AlignRight
             font.pixelSize: Theme.fontSizeSmall
@@ -98,15 +98,25 @@ Page {
         }
     }
 
-    Button {
-        id: homepage
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: copyright.bottom
-        anchors.topMargin: Theme.paddingLarge * 2
-        text: qsTr("GitHub repo")
-        onClicked: {
-            Qt.openUrlExternally("https://github.com/mentaljam/Beerware")
+    Column {
+        id: buttonsColumn
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+            top: copyrightGrid.bottom
+            topMargin: Theme.paddingLarge * 2
+        }
+        spacing: Theme.paddingLarge
+
+        Button {
+            id: homepageButton
+            text: qsTr("GitHub repo")
+            onClicked: Qt.openUrlExternally("https://github.com/mentaljam/Beerware")
+        }
+
+        Button {
+            id: translationsButton
+            text: qsTr("Translate")
+            onClicked: Qt.openUrlExternally("https://www.transifex.com/mentaljam/harbour-beerware")
         }
     }
-
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.1" language="ru">
 <context>
     <name>About</name>
     <message>
@@ -18,6 +18,10 @@
     <message>
         <source>GitHub repo</source>
         <translation>Код на GitHub</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Перевести</translation>
     </message>
 </context>
 <context>
