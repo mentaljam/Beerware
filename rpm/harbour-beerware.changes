@@ -1,3 +1,8 @@
+* Tue Apr 25 2017 Petr Tsymbarovich <petr@tsymbarovich.ru> 0.9.2
+- Rearrange the delegate context menu
+- Update About.qml
+
+
 * Mon Apr 24 2017 Petr Tsymbarovich <petr@tsymbarovich.ru> 0.9.1
 - Fix DB path error for a fresh installation
 
