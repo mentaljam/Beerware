@@ -51,13 +51,6 @@ ListItem {
         id: contextMenu
 
         MenuItem {
-            text: qsTr("Remove")
-            onClicked: remorseAction(qsTr("Deleting"), function() {
-                beersModel.removeBeer(index);
-            })
-        }
-
-        MenuItem {
             text: qsTr("Share")
             onClicked:  {
                 if (beer.category) {
@@ -67,6 +60,13 @@ ListItem {
                 }
                 notification.show(qsTr("The description of the beer was copied to the clipboard"));
             }
+        }
+
+        MenuItem {
+            text: qsTr("Remove")
+            onClicked: remorseAction(qsTr("Deleting"), function() {
+                beersModel.removeBeer(index);
+            })
         }
     }
 }
