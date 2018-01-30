@@ -42,6 +42,7 @@ RESOURCES += harbour-beerware.qrc
 
 TRANSLATIONS += \
     translations/harbour-beerware-de.ts \
+    translations/harbour-beerware-nl.ts \
     translations/harbour-beerware-ru.ts
 
 SAILFISHAPP_ICONS = \
