@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<TS version="2.1" language="de">
 <context>
     <name>About</name>
     <message>
@@ -19,16 +19,20 @@
         <source>GitHub repo</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BeerDelegate</name>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">Entfernen</translation>
+        <translation>Entfernen</translation>
     </message>
     <message>
         <source>Deleting</source>
-        <translation type="unfinished">Lösche</translation>
+        <translation>Lösche</translation>
     </message>
     <message>
         <source>Share</source>
@@ -43,11 +47,11 @@
     <name>BeerPage</name>
     <message>
         <source>Beer name</source>
-        <translation type="unfinished">Biername</translation>
+        <translation>Biername</translation>
     </message>
     <message>
         <source>Beer type</source>
-        <translation type="unfinished">Biersorte</translation>
+        <translation>Biersorte</translation>
     </message>
     <message>
         <source>Rating</source>
@@ -58,7 +62,7 @@
     <name>CategoriesPage</name>
     <message>
         <source>Beer type</source>
-        <translation type="unfinished">Biersorte</translation>
+        <translation>Biersorte</translation>
     </message>
     <message>
         <source>Add a new beer type</source>
